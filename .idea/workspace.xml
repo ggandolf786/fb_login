@@ -45,11 +45,19 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="538">
               <caret line="55" column="2" lean-forward="false" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+=======
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
               <folding />
             </state>
           </provider>
@@ -85,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
@@ -194,11 +202,18 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/create.js.erb" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/Gemfile" />
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
         <option value="$PROJECT_DIR$/config/initializers/assets.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Gemfile" />
+=======
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
       </list>
     </option>
   </component>
@@ -440,12 +455,20 @@
       <updated>1531685251542</updated>
       <workItem from="1531685252869" duration="6893000" />
       <workItem from="1532030233407" duration="6151000" />
+<<<<<<< HEAD
       <workItem from="1532111862393" duration="3934000" />
+=======
+      <workItem from="1532111862393" duration="3804000" />
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="16978000" />
+=======
+    <option name="totallyTimeSpent" value="16848000" />
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -781,6 +804,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
     <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -809,6 +843,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
@@ -817,6 +852,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
           <caret line="55" column="2" lean-forward="false" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+=======
+>>>>>>> 594ee30445e6c43744bcd15673c3185a4dc62384
           <folding />
         </state>
       </provider>
