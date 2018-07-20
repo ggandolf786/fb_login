@@ -1,0 +1,196 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    color: #666;
+    font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th,
+td {
+    padding: 6px 15px;
+}
+th {
+    background: #42444e;
+    color: #fff;
+    text-align: left;
+}
+tr:first-child th:first-child {
+    border-top-left-radius: 6px;
+}
+tr:first-child th:last-child {
+    border-top-right-radius: 6px;
+}
+td {
+    border-right: 1px solid #c6c9cc;
+    border-bottom: 1px solid #c6c9cc;
+}
+td:first-child {
+    border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+    background: #eaeaed;
+}
+tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+
+
+
+/*=============================== image grid ==============================*/
+
+
+.wrapper {
+    max-width: 80em;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    padding: 4px;
+    width:1020px;
+}
+li {
+    display: inline-block;
+    overflow: hidden;
+}
+img {
+    height:250px;
+    width: 250px; float: left; padding: 1px;
+}
+.blur-img {
+    filter: blur(10px);
+}
+.overlay-container {
+    display: block;
+    position: relative;
+&::before {
+     content: attr(data-overlay-text);
+     font: 1em/1.5em 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     position: absolute;
+     z-index: 1;
+     /*On top of parent*/
+     top: 40%;
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     background: rgba(128, 128, 128, 0.80);
+     opacity: 0;
+     -moz-transform: translateY(0);
+     -ms-transform: translateY(0);
+     -o-transform: translateY(0);
+     -webkit-transform: translateY(0);
+     transform: translateY(0);
+     -moz-transition: all 0.3s;
+     -o-transition: all 0.3s;
+     -webkit-transition: all 0.3s;
+     transition: all 0.3s;
+ }
+&:hover::before {
+     opacity: 1;
+     -moz-transform: translateY(20px);
+     -ms-transform: translateY(20px);
+     -o-transform: translateY(20px);
+     -webkit-transform: translateY(20px);
+     transform: translateY(20px);
+ }
+.overlay-img {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+&:hover .overlay-img {
+     -moz-transform: scale(1.2);
+     -ms-transform: scale(1.2);
+     -o-transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+     transform: scale(1.2);
+ }
+}
+}
+
+/*=========== modal ================*/
+
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal .modal-content {
+    background-color: #fff;
+    border-radius: 0;
+    color: #333;
+    margin: 0 auto;
+    max-width: 420px;
+    padding: 30px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.btn-close {
+    font-size: 50px;
+    line-height: 25px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+}
