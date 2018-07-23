@@ -1,0 +1,153 @@
+
+<table style="width: 500px; ">
+  <tr>
+    <td colspan="2">
+      <h1 class="mb-3 forest-text text-center"><i class="far fa-calendar-alt"></i></h1>
+      <h1 class="h3 mb-4 font-weight-normal forest-text text-center">Create/Edit Profile</h1>
+    </td>
+  </tr>
+    <%= form_for @profile do |f| %>
+      <br/>
+      <tr>
+        <td>
+          <label for="name">Name: </label>
+        </td>
+        <td>
+          <%= f.text_field :name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">UID: </label>
+        </td>
+        <td>
+          <%= f.text_field :uid %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">User Name: </label>
+        </td>
+        <td>
+          <%= f.text_field :uname %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Profile Pic URL: </label>
+        </td>
+        <td>
+          <%= f.text_field :profile_pic %>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          Images
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="name">Image 1 </label>
+        </td>
+        <td>
+          <%= f.text_field :img1 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 2 </label>
+        </td>
+        <td>
+          <%= f.text_field :img2 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 3 </label>
+        </td>
+        <td>
+          <%= f.text_field :img3 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 4 </label>
+        </td>
+        <td>
+          <%= f.text_field :img4 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 5 </label>
+        </td>
+        <td>
+          <%= f.text_field :img5 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 6 </label>
+        </td>
+        <td>
+          <%= f.text_field :img6 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 7 </label>
+        </td>
+        <td>
+          <%= f.text_field :img7 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 8 </label>
+        </td>
+        <td>
+          <%= f.text_field :img8 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 9 </label>
+        </td>
+        <td>
+          <%= f.text_field :img9 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 10 </label>
+        </td>
+        <td>
+          <%= f.text_field :img10 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 11 </label>
+        </td>
+        <td>
+          <%= f.text_field :img11 %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Image 12 </label>
+        </td>
+        <td>
+          <%= f.text_field :img12 %>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <%= f.submit %>
+        </td>
+      </tr>
+    <% end %>
+</table>

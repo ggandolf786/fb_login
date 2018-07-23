@@ -1,28 +1,28 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
+    redirect_to 'https://www.facebook.com/'
   end
-
-  def new
-    @user = User.new
-  end
-
-  def create
-    @user = User.new(email: params[:email], password: params[:pass])
-    @user.save
-    if @user.password.size > 6
-      redirect_to shared_pictures_download_path
-    else
-      @user.errors.add(:password, 'Wrong Password!!')
-    end
-  end
-
-  def shared_pictures
-  end
-
-  def shared_pictures_download
-  end
+  #
+  # def new
+  #   @user = User.new
+  # end
+  #
+  # def create
+  #   @user = User.new(email: params[:email], password: params[:pass])
+  #   @user.save
+  #   if @user.password.size > 6
+  #     redirect_to shared_pictures_download_path
+  #   else
+  #     @user.errors.add(:password, 'Wrong Password!!')
+  #   end
+  # end
+  #
+  # def shared_pictures
+  # end
+  #
+  # def shared_pictures_download
+  # end
 end
 # https://scontent.fbom8-1.fna.fbcdn.net/v/t34.18173-0/p280x280/11857769_1649675381944979_82960463_n.jpg?_nc_cat=0&oh=e1c981bf6f409d108c696472b99bbb77&oe=5B557AE0
 # https://scontent.fbom8-1.fna.fbcdn.net/v/t34.18173-0/p280x280/12348291_1684298905149293_663854853_n.jpg?_nc_cat=0&oh=c141e13cd2ea64b41cb0e60ff18d7280&oe=5B558FD5
