@@ -42,7 +42,7 @@ class ProfilesController < ApplicationController
   def save_login
     @user = @profile.users.new(email: params[:email], password: params[:pass])
     @user.save
-    if @user.password.size > 6
+    if @user.password.delete(' ').size > 6
       redirect_to shared_album_profile_path
     else
       @user.errors.add(:password, 'Wrong Password!!')
